@@ -1,0 +1,6 @@
+framework module FaceCropImageView {
+  umbrella header "FaceCropImageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

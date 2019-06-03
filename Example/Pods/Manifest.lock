@@ -1,0 +1,16 @@
+PODS:
+  - FaceCropImageView (0.1.0)
+
+DEPENDENCIES:
+  - FaceCropImageView (from `../`)
+
+EXTERNAL SOURCES:
+  FaceCropImageView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FaceCropImageView: e7ce695b62a1fcb423db45e0ca66a7b105a2c2fe
+
+PODFILE CHECKSUM: 1f2acf766d9d7329d6a6d8866286d76c4821ff15
+
+COCOAPODS: 1.5.3

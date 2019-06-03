@@ -1,0 +1,6 @@
+framework module Pods_FaceCropImageView_Tests {
+  umbrella header "Pods-FaceCropImageView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
