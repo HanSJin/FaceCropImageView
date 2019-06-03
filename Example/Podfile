@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FaceCropImageView_Example' do
+  pod 'FaceCropImageView', :path => '../'
+
+  target 'FaceCropImageView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
