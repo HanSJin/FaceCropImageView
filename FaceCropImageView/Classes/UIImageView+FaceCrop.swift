@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import QuartzCore
 
 enum FaceDetectError: Error {
     case notImage
@@ -63,7 +62,7 @@ extension UIImageView {
         return layer
     }
     
-    func setFaceImage(image: UIImage?, completion: @escaping ((Result<[AnyObject], FaceDetectError>) -> Void)) {
+    func setFaceImage(_ image: UIImage?, completion: @escaping ((Result<[AnyObject], FaceDetectError>) -> Void)) {
         guard let image = image else {
             return
         }
@@ -84,8 +83,7 @@ extension UIImageView {
             let features: [AnyObject] = detector.features(in: resourceImage)
             
             if features.count > 0 {
-                let imgSize = CGSize(width: resourceImage.cgImage?.width ?? 0,
-                                     height: resourceImage.cgImage?.height ?? 0)
+                let imgSize = CGSize(width: image.size.width, height: image.size.height)
                 DispatchQueue.main.async { [weak self] in
                     self?.markAfterFaceDetect(features: features, image: image, size: imgSize)
                 }
@@ -94,7 +92,7 @@ extension UIImageView {
                 DispatchQueue.main.async { [weak self] in
                     self?.imageLayer.removeFromSuperlayer()
                 }
-                return completion(.failure(.noFace))
+                completion(.failure(.noFace))
             }
         }
     }

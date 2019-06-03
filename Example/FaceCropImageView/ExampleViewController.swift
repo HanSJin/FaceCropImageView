@@ -20,6 +20,10 @@ class ExampleViewController: UIViewController {
         normalImageView.contentMode = .scaleAspectFill
         normalImageView.image = UIImage(named: "jenny12")
         
+//        faceCropImageView.setFaceImge(UIImage(named: "jenny12"), completion: { result in
+//        
+//        })
+        
     }
 }
 
