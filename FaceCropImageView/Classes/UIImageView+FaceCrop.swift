@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import QuartzCore
-import KingFisher
 
 enum FaceDetectError: Error {
     case notImage
@@ -64,53 +63,38 @@ extension UIImageView {
         return layer
     }
     
-    func setFaceImage(urlString: String, completion: @escaping ((Result<[AnyObject], FaceDetectError>) -> Void)) {
-        guard let url = URL(string: urlString) else {
+    func setFaceImage(image: UIImage?, completion: @escaping ((Result<[AnyObject], FaceDetectError>) -> Void)) {
+        guard let image = image else {
             return
         }
-        self.setFaceImage(url: url, completion: completion)
-    }
-    
-    func setFaceImage(url: URL, completion: @escaping ((Result<[AnyObject], FaceDetectError>) -> Void)) {
-        KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { [weak self] result in
-            guard let `self` = self else {
+        DispatchQueue.global(qos: .userInteractive).async { [weak self] in
+            let resourceImage: CIImage
+            if let ciImage = image.ciImage {
+                resourceImage = ciImage
+            } else if let cgImage = image.cgImage {
+                resourceImage = CIImage(cgImage: cgImage)
+            } else {
+                completion(.failure(.notImage))
                 return
             }
-            DispatchQueue.global(qos: .userInteractive).async { [weak self] in
-                switch result {
-                case .success(let retrieveImageResult):
-                    let resourceImage: CIImage
-                    
-                    if let ciImage = retrieveImageResult.image.ciImage {
-                        resourceImage = ciImage
-                    } else if let cgImage = retrieveImageResult.image.cgImage {
-                        resourceImage = CIImage(cgImage: cgImage)
-                    } else {
-                        completion(.failure(.notImage))
-                        return
-                    }
-                    guard let detector = self?.detector else {
-                        completion(.failure(.detectorInitialFail))
-                        return
-                    }
-                    let features: [AnyObject] = detector.features(in: resourceImage)
-                    
-                    if features.count > 0 {
-                        let imgSize = CGSize(width: resourceImage.cgImage?.width ?? 0,
-                                             height: resourceImage.cgImage?.height ?? 0)
-                        DispatchQueue.main.async { [weak self] in
-                            self?.markAfterFaceDetect(features: features, image: retrieveImageResult.image, size: imgSize)
-                        }
-                        completion(.success(features))
-                    } else {
-                        DispatchQueue.main.async { [weak self] in
-                            self?.imageLayer.removeFromSuperlayer()
-                        }
-                        return completion(.failure(.noFace))
-                    }
-                case .failure(let error):
-                    completion(.failure(.downloadFail(error)))
+            guard let detector = self?.detector else {
+                completion(.failure(.detectorInitialFail))
+                return
+            }
+            let features: [AnyObject] = detector.features(in: resourceImage)
+            
+            if features.count > 0 {
+                let imgSize = CGSize(width: resourceImage.cgImage?.width ?? 0,
+                                     height: resourceImage.cgImage?.height ?? 0)
+                DispatchQueue.main.async { [weak self] in
+                    self?.markAfterFaceDetect(features: features, image: image, size: imgSize)
                 }
+                completion(.success(features))
+            } else {
+                DispatchQueue.main.async { [weak self] in
+                    self?.imageLayer.removeFromSuperlayer()
+                }
+                return completion(.failure(.noFace))
             }
         }
     }
