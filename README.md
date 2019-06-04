@@ -3,8 +3,11 @@
 [![Platform](https://img.shields.io/cocoapods/p/FaceCropImageView.svg?style=flat)](https://cocoapods.org/pods/FaceCropImageView)
 
 ## FaceCropImageView
-This FaceCropImageView is the extension of UIImageView that helps to crop and show the proper location of face in the photo.
-This library was strongly inspired by [UIImageView-BetterFace](https://github.com/croath/UIImageView-BetterFace) 
+This FaceCropImageView is the extension of UIImageView that helps to crop and show the proper location of face in the photo. This library was strongly inspired by [UIImageView-BetterFace](https://github.com/croath/UIImageView-BetterFace).
+
+Demo Screenshot is here!
+
+<img src="./Example/Images/demo-image.jpg" width="450">
 
 ## Installation
 
@@ -15,6 +18,14 @@ it, simply add the following line to your Podfile:
 pod 'FaceCropImageView'
 ```
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Usage
+Simple usage likes below.
+
+```Swift
+let imageUrl = URL(string: "https://some-url/image.jpg")
+imageView.setFaceImage(with: imageUrl)
+```
 
 ## Author
 
