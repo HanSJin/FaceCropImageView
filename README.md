@@ -2,12 +2,12 @@
 [![License](https://img.shields.io/cocoapods/l/FaceCropImageView.svg?style=flat)](https://cocoapods.org/pods/FaceCropImageView)
 [![Platform](https://img.shields.io/cocoapods/p/FaceCropImageView.svg?style=flat)](https://cocoapods.org/pods/FaceCropImageView)
 
-## FaceCropImageView
+## Face Crop ImageView
 This FaceCropImageView is the extension of UIImageView that helps to crop and show the proper location of face in the photo. This library was strongly inspired by [UIImageView-BetterFace](https://github.com/croath/UIImageView-BetterFace).
 
-Demo Screenshot is here!
+Demo screenshot and description are here!
 
-<img src="https://raw.githubusercontent.com/HanSJin/FaceCropImageView/master/Example/Images/demo-explain.jpg" width="450">
+<img src="https://raw.githubusercontent.com/HanSJin/FaceCropImageView/master/Example/Images/demo-explain.jpg">
 
 ## Installation
 
@@ -23,9 +23,40 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Simple usage likes below.
 
 ```Swift
+let myImage = UIImage(named: "some-image")
+imageView.setFaceImage(imageUrl)
+```
+
+You can also crop the image of the web through the image URL. (In this case, the [Kingfisher](https://github.com/onevcat/Kingfisher) library is used)
+
+```Swift
 let imageUrl = URL(string: "https://some-url/image.jpg")
 imageView.setFaceImage(with: imageUrl)
 ```
+
+If you need to detect faces more specifically, use `fast` parameter.
+This parameter can determine the value of `CIDectorAccuracy` to CIDectorAccuracyLow or CIDectorAccuracyHigh.
+
+
+```Swift
+imageView.setFaceImage(with: imageUrl, fast: false)
+```
+
+And it supports the completion closure.
+
+```Swift
+imageView.setFaceImage(with: imageUrl, fast: false) { result in
+    switch result {
+    case .success(let features):
+        // `feature` means detected face infomation.
+        // `features.count == 0` means no face in the image.
+        print(features)
+    case .failure(let error):
+        print(error)
+    }
+}
+```
+
 
 ## Author
 
