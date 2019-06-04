@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-enum FaceDetectError: Error {
+public enum FaceDetectError: Error {
     case notImage
     case downloadFail(Error)
     case detectorInitialFail
@@ -26,33 +26,27 @@ enum FaceDetectError: Error {
 }
 
 // MARK: - Extension UIImageView for the FaceCrop
-extension UIImageView {
+public extension UIImageView {
     
-    private var BETTER_LAYER_NAME: String {
-        return "BETTER_LAYER_NAME"
+    private var FaceCropLayerName: String {
+        return "FaceCropLayer"
     }
+    
     private var GOLDEN_RATIO: CGFloat {
         return 0.618
-    }
-    private var fast: Bool {
-        return false
-    }
-    private var detector: CIDetector? {
-        let opts = [(self.fast ? CIDetectorAccuracyLow : CIDetectorAccuracyHigh): CIDetectorAccuracy]
-        return CIDetector(ofType: CIDetectorTypeFace, context: nil, options: opts)
     }
     
     private var imageLayer: CALayer {
         if let sublayers = self.layer.sublayers {
             for layer: CALayer in sublayers {
-                if layer.name == BETTER_LAYER_NAME {
+                if layer.name == FaceCropLayerName {
                     return layer
                 }
             }
         }
         
         let layer = CALayer()
-        layer.name = BETTER_LAYER_NAME
+        layer.name = FaceCropLayerName
         layer.actions = [
             "contents": NSNull(),
             "bounds": NSNull(),
@@ -62,24 +56,26 @@ extension UIImageView {
         return layer
     }
     
-    func setFaceImage(_ image: UIImage?, completion: @escaping ((Result<[AnyObject], FaceDetectError>) -> Void)) {
+    func setFaceImage(_ image: UIImage?, fast: Bool = true, completion: ((Result<[AnyObject], FaceDetectError>) -> Void)? = nil) {
         guard let image = image else {
+            completion?(.failure(.notImage))
             return
         }
+        let resourceImage: CIImage
+        if let ciImage = image.ciImage {
+            resourceImage = ciImage
+        } else if let cgImage = image.cgImage {
+            resourceImage = CIImage(cgImage: cgImage)
+        } else {
+            completion?(.failure(.notImage))
+            return
+        }
+        guard let detector = makeDetector(fast: fast) else {
+            completion?(.failure(.detectorInitialFail))
+            return
+        }
+        
         DispatchQueue.global(qos: .userInteractive).async { [weak self] in
-            let resourceImage: CIImage
-            if let ciImage = image.ciImage {
-                resourceImage = ciImage
-            } else if let cgImage = image.cgImage {
-                resourceImage = CIImage(cgImage: cgImage)
-            } else {
-                completion(.failure(.notImage))
-                return
-            }
-            guard let detector = self?.detector else {
-                completion(.failure(.detectorInitialFail))
-                return
-            }
             let features: [AnyObject] = detector.features(in: resourceImage)
             
             if features.count > 0 {
@@ -87,17 +83,22 @@ extension UIImageView {
                 DispatchQueue.main.async { [weak self] in
                     self?.markAfterFaceDetect(features: features, image: image, size: imgSize)
                 }
-                completion(.success(features))
+                completion?(.success(features))
             } else {
                 DispatchQueue.main.async { [weak self] in
                     self?.imageLayer.removeFromSuperlayer()
                 }
-                completion(.failure(.noFace))
+                completion?(.failure(.noFace))
             }
         }
     }
     
-    func markAfterFaceDetect(features: [AnyObject], image: UIImage?, size: CGSize) {
+    private func makeDetector(fast: Bool) -> CIDetector? {
+        let opts = [(fast ? CIDetectorAccuracyLow : CIDetectorAccuracyHigh): CIDetectorAccuracy]
+        return CIDetector(ofType: CIDetectorTypeFace, context: nil, options: opts)
+    }
+    
+    private func markAfterFaceDetect(features: [AnyObject], image: UIImage?, size: CGSize) {
         var fixedRect = CGRect(x: Double(MAXFLOAT), y: Double(MAXFLOAT), width: 0, height: 0)
         var rightBorder:Double = 0, bottomBorder: Double = 0
         for f: AnyObject in features {
@@ -140,12 +141,10 @@ extension UIImageView {
             fixedCenter.x = finalSize.width / size.width * fixedCenter.x
             fixedCenter.y = finalSize.width / size.width * fixedCenter.y
             
-            offset.y = CGFloat(fixedCenter.y - self.bounds.size.height * CGFloat(1-GOLDEN_RATIO))
+            offset.y = CGFloat(fixedCenter.y - self.bounds.size.height * CGFloat(1 - GOLDEN_RATIO))
             if (offset.y < 0) {
                 offset.y = 0
             } else if (offset.y + self.bounds.size.height > finalSize.height) {
-                //                finalSize.height = self.bounds.size.height
-                //                offset.y = finalSize.height
                 offset.y = finalSize.height - self.bounds.size.height
             }
             offset.y = -offset.y

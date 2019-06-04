@@ -16,14 +16,14 @@ class ExampleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         normalImageView.contentMode = .scaleAspectFill
         normalImageView.image = UIImage(named: "jenny12")
-        
-//        faceCropImageView.setFaceImge(UIImage(named: "jenny12"), completion: { result in
-//        
-//        })
-        
+
+        faceCropImageView.contentMode = .scaleAspectFill
+        faceCropImageView.setFaceImage(UIImage(named: "jenny12"), fast: true) { result in
+            print(result)
+        }
     }
 }
 

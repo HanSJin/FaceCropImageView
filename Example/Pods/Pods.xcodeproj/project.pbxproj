@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		17C9AE9B8713D59C212A0B0D5B43309F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		28A2227AB8BD9890A5BBDE3DA6809DDE /* Pods-FaceCropImageView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FED1B7A2A62845A3B8F76637AFC80A1 /* Pods-FaceCropImageView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28A2227AB8BD9890A5BBDE3DA6809DDE /* Pods-FaceCropImageView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8487C96EB2E5E8B8FBBC5D93E642E51A /* Pods-FaceCropImageView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		303D647D3D0F64130F6F4EFDD5F85F82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		37A2FCF00C874AA66221D085B5398B0B /* Pods-FaceCropImageView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 589E104EC6D5D3801A8018BB6383DBDB /* Pods-FaceCropImageView_Example-dummy.m */; };
+		35F6C9675DD1BEA3084CA67ED03EEFEA /* UIImageView+FaceCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53FD3B6F56D6B21C847507039CB0EB3 /* UIImageView+FaceCrop.swift */; };
+		37A2FCF00C874AA66221D085B5398B0B /* Pods-FaceCropImageView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 239A43C26DB740674F9FF8D0ECA00210 /* Pods-FaceCropImageView_Example-dummy.m */; };
 		76D8B14FA03BCC43FA287F1EB02BE2EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7B4C9A8D8339449E56B900B353915724 /* Pods-FaceCropImageView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB53D9D84E3A9171BC8FCE3DA2125213 /* Pods-FaceCropImageView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEE016C7C56E499A9897F4BDA1B83AE2 /* UIImageView+FaceCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22077221E1EBF1BC4A44BFFC041201F /* UIImageView+FaceCrop.swift */; };
-		C512A19E9F0F429145C0667DBE9535CA /* FaceCropImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E9809637DB215C1D32BE2FBC77433 /* FaceCropImageView-dummy.m */; };
-		CC3E929065D00B35F16111354C0AFED6 /* Pods-FaceCropImageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58DFA181B1FAA4F6DE84333C44C8B67 /* Pods-FaceCropImageView_Tests-dummy.m */; };
-		DCEC92D669DDA9F045B798C726C370DC /* FaceCropImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A85498A53DCABE3944CD0A2EB84C5E /* FaceCropImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4C9A8D8339449E56B900B353915724 /* Pods-FaceCropImageView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD47C46F37DA5C0AFC759F4F9075041 /* Pods-FaceCropImageView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAB0155CC78DF4008A113EA5B522F19F /* FaceCropImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D21BF593E4CFA1F90E01E42939FA75 /* FaceCropImageView-dummy.m */; };
+		CC3E929065D00B35F16111354C0AFED6 /* Pods-FaceCropImageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C726E18E0EB9F8D8412F2DF74F1E63 /* Pods-FaceCropImageView_Tests-dummy.m */; };
+		DCEC92D669DDA9F045B798C726C370DC /* FaceCropImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C55851EA194A7C8D5EA88C617F7B979 /* FaceCropImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,54 +24,51 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A2174FD7C6BBCE9864FE14618A218439;
+			remoteGlobalIDString = 6EA7D815B5D5AEE58E1143EE8CF12BE9;
 			remoteInfo = FaceCropImageView;
 		};
 		0D8E858D18D561B35DC4D9539FD848C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 07D7D32CB8850446986182C347C25F85;
+			remoteGlobalIDString = ED2EA88946FD8A283F31AC87607C8900;
 			remoteInfo = "Pods-FaceCropImageView_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		012B50B3014402B449177A83242771E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		038A801D5C3F084A1AEC3A0633439EFD /* Pods-FaceCropImageView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FaceCropImageView_Example-resources.sh"; sourceTree = "<group>"; };
-		0A7C0A72CFE9231F76C9E4040F27E133 /* Pods-FaceCropImageView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FaceCropImageView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		12D17B398074B1EC9D9EBAB2444264C2 /* Pods-FaceCropImageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceCropImageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		15AD1F1524873CF19BBCFC5F414EDED3 /* Pods_FaceCropImageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceCropImageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		171A39ADE7F4A10839C0E92F9B5E537C /* Pods-FaceCropImageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceCropImageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		19BB9C1A1CEE38CD5802EB5B7AE632B1 /* FaceCropImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FaceCropImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		03C726E18E0EB9F8D8412F2DF74F1E63 /* Pods-FaceCropImageView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FaceCropImageView_Tests-dummy.m"; sourceTree = "<group>"; };
+		11E3ECA677E621842FCDEEA73306A663 /* Pods-FaceCropImageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceCropImageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1E060E87638A5017E06A21E7FBC1B217 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		239A43C26DB740674F9FF8D0ECA00210 /* Pods-FaceCropImageView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FaceCropImageView_Example-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3FED1B7A2A62845A3B8F76637AFC80A1 /* Pods-FaceCropImageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FaceCropImageView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		483ADFD9E6D854081D5AFC184E27902A /* Pods-FaceCropImageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceCropImageView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4D04374E75E3FC42057035025C210678 /* Pods-FaceCropImageView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FaceCropImageView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		589E104EC6D5D3801A8018BB6383DBDB /* Pods-FaceCropImageView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FaceCropImageView_Example-dummy.m"; sourceTree = "<group>"; };
-		60C0D82FD01CBE353DBE21CDFAD9753A /* FaceCropImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FaceCropImageView.modulemap; sourceTree = "<group>"; };
-		6C7C0FD34C213262FF1723AF412A137D /* FaceCropImageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FaceCropImageView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8DD0CE5A078477E5CFFC3D60447BD9ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92AD6BAC5708723ABDEC9E8E565AE5DD /* Pods-FaceCropImageView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FaceCropImageView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		9A50182D2BB4D77D0BC8EF55D64A55DF /* Pods-FaceCropImageView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaceCropImageView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D0E9809637DB215C1D32BE2FBC77433 /* FaceCropImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FaceCropImageView-dummy.m"; sourceTree = "<group>"; };
-		ACBEB165D75468DA39B41D8C963713D6 /* FaceCropImageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FaceCropImageView.xcconfig; sourceTree = "<group>"; };
-		BAFF70D250C45CFEA3182E414E35DF12 /* FaceCropImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FaceCropImageView-prefix.pch"; sourceTree = "<group>"; };
-		BC1F2C09ECE05B50F8870961102952B3 /* Pods-FaceCropImageView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FaceCropImageView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C125EA01EF07CAB024FADD07A8304675 /* Pods-FaceCropImageView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FaceCropImageView_Example.modulemap"; sourceTree = "<group>"; };
-		C3790DB10D5A3A4988F8F3B288132A67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3F51FC9C6467DAFCC4F8EC63E30E0FB /* Pods-FaceCropImageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceCropImageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C9E04069564729000FD2D2644F7F31C6 /* Pods_FaceCropImageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceCropImageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFF64154174B03786EE9981A180AA2C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D6B55D1FD378500C9012C2B13B140660 /* Pods-FaceCropImageView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaceCropImageView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DCF8DF3A12A7090F6BE67014F22C2228 /* Pods-FaceCropImageView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FaceCropImageView_Tests-resources.sh"; sourceTree = "<group>"; };
-		E58DFA181B1FAA4F6DE84333C44C8B67 /* Pods-FaceCropImageView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FaceCropImageView_Tests-dummy.m"; sourceTree = "<group>"; };
-		E99F2AEA8EE58AAEDA412E82CE0BB8E5 /* Pods-FaceCropImageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FaceCropImageView_Tests.modulemap"; sourceTree = "<group>"; };
-		F22077221E1EBF1BC4A44BFFC041201F /* UIImageView+FaceCrop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+FaceCrop.swift"; path = "FaceCropImageView/Classes/UIImageView+FaceCrop.swift"; sourceTree = "<group>"; };
-		F8A85498A53DCABE3944CD0A2EB84C5E /* FaceCropImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FaceCropImageView-umbrella.h"; sourceTree = "<group>"; };
-		F9F06B1C3F5BCDA169E613DD17784CB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB53D9D84E3A9171BC8FCE3DA2125213 /* Pods-FaceCropImageView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FaceCropImageView_Example-umbrella.h"; sourceTree = "<group>"; };
+		42AE8A9C924FF3A12DCD9F88D397ABF7 /* FaceCropImageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FaceCropImageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E77E57FB692D5BC43AEBF8950B27B15 /* Pods-FaceCropImageView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FaceCropImageView_Example.modulemap"; sourceTree = "<group>"; };
+		54D0BE2EC6D4F2BA0EE74629514DF00D /* FaceCropImageView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FaceCropImageView-Info.plist"; sourceTree = "<group>"; };
+		5FD47C46F37DA5C0AFC759F4F9075041 /* Pods-FaceCropImageView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FaceCropImageView_Example-umbrella.h"; sourceTree = "<group>"; };
+		8487C96EB2E5E8B8FBBC5D93E642E51A /* Pods-FaceCropImageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FaceCropImageView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		851E136012AE1C4117671D2AF84FE349 /* Pods-FaceCropImageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceCropImageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		85986EA37714FBC86BB87929527D4AC6 /* Pods-FaceCropImageView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaceCropImageView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		93913FD2570776CABA3ED8C111913495 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		95462F166496A75FF990AD83D26CE95E /* Pods-FaceCropImageView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FaceCropImageView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9C55851EA194A7C8D5EA88C617F7B979 /* FaceCropImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FaceCropImageView-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A983297BA3235B5C063504CC8E2BA8BB /* Pods_FaceCropImageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FaceCropImageView_Tests.framework; path = "Pods-FaceCropImageView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0098AA2A52EE1F63D45FDB5AB5EAF8 /* FaceCropImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FaceCropImageView-prefix.pch"; sourceTree = "<group>"; };
+		AEC4D2D9451F9ABE691D3CE506133979 /* FaceCropImageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FaceCropImageView.xcconfig; sourceTree = "<group>"; };
+		B2AFBC577B843977AEDC27157873527F /* Pods_FaceCropImageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FaceCropImageView_Example.framework; path = "Pods-FaceCropImageView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADA864CA8CB04A38986BB8C794E3B3D /* Pods-FaceCropImageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceCropImageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C129DD9216ED8867D7E7967D2ED19EC7 /* Pods-FaceCropImageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceCropImageView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C2FC28E98BD822F31E548ABAA6B36135 /* Pods-FaceCropImageView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaceCropImageView_Example-Info.plist"; sourceTree = "<group>"; };
+		C4156428754FA83537A7453395AF6EFF /* Pods-FaceCropImageView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FaceCropImageView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C51B17B701768940015B1F7C77E15AF3 /* FaceCropImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FaceCropImageView.framework; path = FaceCropImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5C7EC6CF7AF2D0FA569A02E96D573C /* FaceCropImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FaceCropImageView.modulemap; sourceTree = "<group>"; };
+		D3D21BF593E4CFA1F90E01E42939FA75 /* FaceCropImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FaceCropImageView-dummy.m"; sourceTree = "<group>"; };
+		E234D35919D9BCD7CB95427180A0361B /* Pods-FaceCropImageView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaceCropImageView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F53FD3B6F56D6B21C847507039CB0EB3 /* UIImageView+FaceCrop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+FaceCrop.swift"; path = "FaceCropImageView/Classes/UIImageView+FaceCrop.swift"; sourceTree = "<group>"; };
+		FB55C55E4686A9AD583AA1369EF722F8 /* Pods-FaceCropImageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FaceCropImageView_Tests.modulemap"; sourceTree = "<group>"; };
+		FCAF348190B93F6DDF0A72A457465965 /* Pods-FaceCropImageView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FaceCropImageView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FCF04F3337675C78C8BC03059A2B4826 /* Pods-FaceCropImageView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaceCropImageView_Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,73 +99,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52FD1D6922E9A74EF41717FD4C0F2C6E /* Pod */ = {
+		7E4575C3ECD593E0723657EC956622BC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6C7C0FD34C213262FF1723AF412A137D /* FaceCropImageView.podspec */,
-				012B50B3014402B449177A83242771E5 /* LICENSE */,
-				CFF64154174B03786EE9981A180AA2C3 /* README.md */,
+				A7BA87FD7F099BB948AA88C835252331 /* Pods-FaceCropImageView_Example */,
+				BF895E45A488664297D1FF8DFAA4936C /* Pods-FaceCropImageView_Tests */,
 			);
-			name = Pod;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5C497A2873F7E58542EF069F3228BA7F /* Pods-FaceCropImageView_Example */ = {
+		9214D0B1D37B5937A5D1DA4B20C38070 /* FaceCropImageView */ = {
 			isa = PBXGroup;
 			children = (
-				F9F06B1C3F5BCDA169E613DD17784CB8 /* Info.plist */,
-				C125EA01EF07CAB024FADD07A8304675 /* Pods-FaceCropImageView_Example.modulemap */,
-				4D04374E75E3FC42057035025C210678 /* Pods-FaceCropImageView_Example-acknowledgements.markdown */,
-				9A50182D2BB4D77D0BC8EF55D64A55DF /* Pods-FaceCropImageView_Example-acknowledgements.plist */,
-				589E104EC6D5D3801A8018BB6383DBDB /* Pods-FaceCropImageView_Example-dummy.m */,
-				BC1F2C09ECE05B50F8870961102952B3 /* Pods-FaceCropImageView_Example-frameworks.sh */,
-				038A801D5C3F084A1AEC3A0633439EFD /* Pods-FaceCropImageView_Example-resources.sh */,
-				FB53D9D84E3A9171BC8FCE3DA2125213 /* Pods-FaceCropImageView_Example-umbrella.h */,
-				12D17B398074B1EC9D9EBAB2444264C2 /* Pods-FaceCropImageView_Example.debug.xcconfig */,
-				483ADFD9E6D854081D5AFC184E27902A /* Pods-FaceCropImageView_Example.release.xcconfig */,
+				F53FD3B6F56D6B21C847507039CB0EB3 /* UIImageView+FaceCrop.swift */,
+				B4FA2E4F73E588CC28BBD5FF5B1CC611 /* Pod */,
+				D0FA752BCA74E4DEF1FC96A4BE407597 /* Support Files */,
+			);
+			name = FaceCropImageView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A7BA87FD7F099BB948AA88C835252331 /* Pods-FaceCropImageView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4E77E57FB692D5BC43AEBF8950B27B15 /* Pods-FaceCropImageView_Example.modulemap */,
+				FCAF348190B93F6DDF0A72A457465965 /* Pods-FaceCropImageView_Example-acknowledgements.markdown */,
+				85986EA37714FBC86BB87929527D4AC6 /* Pods-FaceCropImageView_Example-acknowledgements.plist */,
+				239A43C26DB740674F9FF8D0ECA00210 /* Pods-FaceCropImageView_Example-dummy.m */,
+				95462F166496A75FF990AD83D26CE95E /* Pods-FaceCropImageView_Example-frameworks.sh */,
+				C2FC28E98BD822F31E548ABAA6B36135 /* Pods-FaceCropImageView_Example-Info.plist */,
+				5FD47C46F37DA5C0AFC759F4F9075041 /* Pods-FaceCropImageView_Example-umbrella.h */,
+				BADA864CA8CB04A38986BB8C794E3B3D /* Pods-FaceCropImageView_Example.debug.xcconfig */,
+				C129DD9216ED8867D7E7967D2ED19EC7 /* Pods-FaceCropImageView_Example.release.xcconfig */,
 			);
 			name = "Pods-FaceCropImageView_Example";
 			path = "Target Support Files/Pods-FaceCropImageView_Example";
 			sourceTree = "<group>";
 		};
-		898D58D5B49B76201D2FD57B8CF6F751 /* Pods-FaceCropImageView_Tests */ = {
+		B4FA2E4F73E588CC28BBD5FF5B1CC611 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C3790DB10D5A3A4988F8F3B288132A67 /* Info.plist */,
-				E99F2AEA8EE58AAEDA412E82CE0BB8E5 /* Pods-FaceCropImageView_Tests.modulemap */,
-				0A7C0A72CFE9231F76C9E4040F27E133 /* Pods-FaceCropImageView_Tests-acknowledgements.markdown */,
-				D6B55D1FD378500C9012C2B13B140660 /* Pods-FaceCropImageView_Tests-acknowledgements.plist */,
-				E58DFA181B1FAA4F6DE84333C44C8B67 /* Pods-FaceCropImageView_Tests-dummy.m */,
-				92AD6BAC5708723ABDEC9E8E565AE5DD /* Pods-FaceCropImageView_Tests-frameworks.sh */,
-				DCF8DF3A12A7090F6BE67014F22C2228 /* Pods-FaceCropImageView_Tests-resources.sh */,
-				3FED1B7A2A62845A3B8F76637AFC80A1 /* Pods-FaceCropImageView_Tests-umbrella.h */,
-				171A39ADE7F4A10839C0E92F9B5E537C /* Pods-FaceCropImageView_Tests.debug.xcconfig */,
-				C3F51FC9C6467DAFCC4F8EC63E30E0FB /* Pods-FaceCropImageView_Tests.release.xcconfig */,
+				42AE8A9C924FF3A12DCD9F88D397ABF7 /* FaceCropImageView.podspec */,
+				93913FD2570776CABA3ED8C111913495 /* LICENSE */,
+				1E060E87638A5017E06A21E7FBC1B217 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BF895E45A488664297D1FF8DFAA4936C /* Pods-FaceCropImageView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FB55C55E4686A9AD583AA1369EF722F8 /* Pods-FaceCropImageView_Tests.modulemap */,
+				C4156428754FA83537A7453395AF6EFF /* Pods-FaceCropImageView_Tests-acknowledgements.markdown */,
+				E234D35919D9BCD7CB95427180A0361B /* Pods-FaceCropImageView_Tests-acknowledgements.plist */,
+				03C726E18E0EB9F8D8412F2DF74F1E63 /* Pods-FaceCropImageView_Tests-dummy.m */,
+				FCF04F3337675C78C8BC03059A2B4826 /* Pods-FaceCropImageView_Tests-Info.plist */,
+				8487C96EB2E5E8B8FBBC5D93E642E51A /* Pods-FaceCropImageView_Tests-umbrella.h */,
+				851E136012AE1C4117671D2AF84FE349 /* Pods-FaceCropImageView_Tests.debug.xcconfig */,
+				11E3ECA677E621842FCDEEA73306A663 /* Pods-FaceCropImageView_Tests.release.xcconfig */,
 			);
 			name = "Pods-FaceCropImageView_Tests";
 			path = "Target Support Files/Pods-FaceCropImageView_Tests";
-			sourceTree = "<group>";
-		};
-		98DCF2E94FCF8CDD4AF51532CE443C38 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C497A2873F7E58542EF069F3228BA7F /* Pods-FaceCropImageView_Example */,
-				898D58D5B49B76201D2FD57B8CF6F751 /* Pods-FaceCropImageView_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B85F0EE55A71258416795E8A7CE1328C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				60C0D82FD01CBE353DBE21CDFAD9753A /* FaceCropImageView.modulemap */,
-				ACBEB165D75468DA39B41D8C963713D6 /* FaceCropImageView.xcconfig */,
-				9D0E9809637DB215C1D32BE2FBC77433 /* FaceCropImageView-dummy.m */,
-				BAFF70D250C45CFEA3182E414E35DF12 /* FaceCropImageView-prefix.pch */,
-				F8A85498A53DCABE3944CD0A2EB84C5E /* FaceCropImageView-umbrella.h */,
-				8DD0CE5A078477E5CFFC3D60447BD9ED /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FaceCropImageView";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -182,12 +173,26 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				FE10EB1BB795680A0CB25FD5E1FA36BA /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				FCFAFF0F6082430FDF1764CA570FEFD5 /* Products */,
-				98DCF2E94FCF8CDD4AF51532CE443C38 /* Targets Support Files */,
+				7E4575C3ECD593E0723657EC956622BC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D0FA752BCA74E4DEF1FC96A4BE407597 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA5C7EC6CF7AF2D0FA569A02E96D573C /* FaceCropImageView.modulemap */,
+				AEC4D2D9451F9ABE691D3CE506133979 /* FaceCropImageView.xcconfig */,
+				D3D21BF593E4CFA1F90E01E42939FA75 /* FaceCropImageView-dummy.m */,
+				54D0BE2EC6D4F2BA0EE74629514DF00D /* FaceCropImageView-Info.plist */,
+				AD0098AA2A52EE1F63D45FDB5AB5EAF8 /* FaceCropImageView-prefix.pch */,
+				9C55851EA194A7C8D5EA88C617F7B979 /* FaceCropImageView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FaceCropImageView";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -198,23 +203,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F444DA560C3828E871625D16800B7A6B /* FaceCropImageView */ = {
-			isa = PBXGroup;
-			children = (
-				F22077221E1EBF1BC4A44BFFC041201F /* UIImageView+FaceCrop.swift */,
-				52FD1D6922E9A74EF41717FD4C0F2C6E /* Pod */,
-				B85F0EE55A71258416795E8A7CE1328C /* Support Files */,
-			);
-			name = FaceCropImageView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		FCFAFF0F6082430FDF1764CA570FEFD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				19BB9C1A1CEE38CD5802EB5B7AE632B1 /* FaceCropImageView.framework */,
-				C9E04069564729000FD2D2644F7F31C6 /* Pods_FaceCropImageView_Example.framework */,
-				15AD1F1524873CF19BBCFC5F414EDED3 /* Pods_FaceCropImageView_Tests.framework */,
+				C51B17B701768940015B1F7C77E15AF3 /* FaceCropImageView.framework */,
+				B2AFBC577B843977AEDC27157873527F /* Pods_FaceCropImageView_Example.framework */,
+				A983297BA3235B5C063504CC8E2BA8BB /* Pods_FaceCropImageView_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,7 +216,7 @@
 		FE10EB1BB795680A0CB25FD5E1FA36BA /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F444DA560C3828E871625D16800B7A6B /* FaceCropImageView */,
+				9214D0B1D37B5937A5D1DA4B20C38070 /* FaceCropImageView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -257,26 +251,7 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		07D7D32CB8850446986182C347C25F85 /* Pods-FaceCropImageView_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 25B7A03F2269216185C16C5A5B4A6FEB /* Build configuration list for PBXNativeTarget "Pods-FaceCropImageView_Example" */;
-			buildPhases = (
-				4D04310F98C37DE2D85E7E95813DB37A /* Headers */,
-				25460CC518F8161A7788401B32193DD2 /* Sources */,
-				8A0C5A2F79C5E89F6E46C64A93D8C26F /* Frameworks */,
-				6765B591F99A5BFD4F6B77FDA16A4C44 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1E499C044CE96819E8FBD676FE86C38A /* PBXTargetDependency */,
-			);
-			name = "Pods-FaceCropImageView_Example";
-			productName = "Pods-FaceCropImageView_Example";
-			productReference = C9E04069564729000FD2D2644F7F31C6 /* Pods_FaceCropImageView_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		2844C780501B81BE4B97949B02079585 /* Pods-FaceCropImageView_Tests */ = {
+		4D8A42919E4AA3A2282F0D89B25578DD /* Pods-FaceCropImageView_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14D17A54EFDD0CF0BFE4518920231643 /* Build configuration list for PBXNativeTarget "Pods-FaceCropImageView_Tests" */;
 			buildPhases = (
@@ -292,15 +267,15 @@
 			);
 			name = "Pods-FaceCropImageView_Tests";
 			productName = "Pods-FaceCropImageView_Tests";
-			productReference = 15AD1F1524873CF19BBCFC5F414EDED3 /* Pods_FaceCropImageView_Tests.framework */;
+			productReference = A983297BA3235B5C063504CC8E2BA8BB /* Pods_FaceCropImageView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2174FD7C6BBCE9864FE14618A218439 /* FaceCropImageView */ = {
+		6EA7D815B5D5AEE58E1143EE8CF12BE9 /* FaceCropImageView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03F46C0E5AEB9638374CFF4C0F30EDA5 /* Build configuration list for PBXNativeTarget "FaceCropImageView" */;
 			buildPhases = (
 				38945AF87C95C0E93E84E32E07D60D1C /* Headers */,
-				FB32233721438B10B721A573D7A99FCC /* Sources */,
+				5CCB4D7DD1DF0BD0F6FAC145E4CDCB61 /* Sources */,
 				425F0728B2AC953EB8128490CBB4FB44 /* Frameworks */,
 				64B68A5AC2B10AB12CA09A8DCB286E79 /* Resources */,
 			);
@@ -310,7 +285,26 @@
 			);
 			name = FaceCropImageView;
 			productName = FaceCropImageView;
-			productReference = 19BB9C1A1CEE38CD5802EB5B7AE632B1 /* FaceCropImageView.framework */;
+			productReference = C51B17B701768940015B1F7C77E15AF3 /* FaceCropImageView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED2EA88946FD8A283F31AC87607C8900 /* Pods-FaceCropImageView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B7A03F2269216185C16C5A5B4A6FEB /* Build configuration list for PBXNativeTarget "Pods-FaceCropImageView_Example" */;
+			buildPhases = (
+				4D04310F98C37DE2D85E7E95813DB37A /* Headers */,
+				25460CC518F8161A7788401B32193DD2 /* Sources */,
+				8A0C5A2F79C5E89F6E46C64A93D8C26F /* Frameworks */,
+				6765B591F99A5BFD4F6B77FDA16A4C44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E499C044CE96819E8FBD676FE86C38A /* PBXTargetDependency */,
+			);
+			name = "Pods-FaceCropImageView_Example";
+			productName = "Pods-FaceCropImageView_Example";
+			productReference = B2AFBC577B843977AEDC27157873527F /* Pods_FaceCropImageView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -334,9 +328,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2174FD7C6BBCE9864FE14618A218439 /* FaceCropImageView */,
-				07D7D32CB8850446986182C347C25F85 /* Pods-FaceCropImageView_Example */,
-				2844C780501B81BE4B97949B02079585 /* Pods-FaceCropImageView_Tests */,
+				6EA7D815B5D5AEE58E1143EE8CF12BE9 /* FaceCropImageView */,
+				ED2EA88946FD8A283F31AC87607C8900 /* Pods-FaceCropImageView_Example */,
+				4D8A42919E4AA3A2282F0D89B25578DD /* Pods-FaceCropImageView_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -374,20 +368,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CCB4D7DD1DF0BD0F6FAC145E4CDCB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB0155CC78DF4008A113EA5B522F19F /* FaceCropImageView-dummy.m in Sources */,
+				35F6C9675DD1BEA3084CA67ED03EEFEA /* UIImageView+FaceCrop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CF1509B21E5A2838152417A84CC74D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CC3E929065D00B35F16111354C0AFED6 /* Pods-FaceCropImageView_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB32233721438B10B721A573D7A99FCC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C512A19E9F0F429145C0667DBE9535CA /* FaceCropImageView-dummy.m in Sources */,
-				AEE016C7C56E499A9897F4BDA1B83AE2 /* UIImageView+FaceCrop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,83 +391,23 @@
 		1E499C044CE96819E8FBD676FE86C38A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FaceCropImageView;
-			target = A2174FD7C6BBCE9864FE14618A218439 /* FaceCropImageView */;
+			target = 6EA7D815B5D5AEE58E1143EE8CF12BE9 /* FaceCropImageView */;
 			targetProxy = 0340B4C31A0A21496006E26168F571E2 /* PBXContainerItemProxy */;
 		};
 		FF58B8B3A3DCC5EC436FF800CC6113F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-FaceCropImageView_Example";
-			target = 07D7D32CB8850446986182C347C25F85 /* Pods-FaceCropImageView_Example */;
+			target = ED2EA88946FD8A283F31AC87607C8900 /* Pods-FaceCropImageView_Example */;
 			targetProxy = 0D8E858D18D561B35DC4D9539FD848C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2A506743CF140B1834F797F766E2A82E /* Release */ = {
+		085EA8F90FCDD2A220C8680839F9089B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADA864CA8CB04A38986BB8C794E3B3D /* Pods-FaceCropImageView_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		4E65B93999F995E24E22216BF0809CEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACBEB165D75468DA39B41D8C963713D6 /* FaceCropImageView.xcconfig */;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -483,75 +417,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FaceCropImageView/FaceCropImageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FaceCropImageView/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FaceCropImageView_Example/Pods-FaceCropImageView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FaceCropImageView/FaceCropImageView.modulemap";
-				PRODUCT_MODULE_NAME = FaceCropImageView;
-				PRODUCT_NAME = FaceCropImageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		647EC06E790DC723F3A9718E922F1B05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 171A39ADE7F4A10839C0E92F9B5E537C /* Pods-FaceCropImageView_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FaceCropImageView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FaceCropImageView_Tests/Pods-FaceCropImageView_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		952727DE30ADD15FC6F7C97FB9D30F85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12D17B398074B1EC9D9EBAB2444264C2 /* Pods-FaceCropImageView_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FaceCropImageView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FaceCropImageView_Example/Pods-FaceCropImageView_Example.modulemap";
@@ -568,7 +436,7 @@
 			};
 			name = Debug;
 		};
-		A6A7DE9C902EFE38BE4A346301EA1DB9 /* Debug */ = {
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -600,8 +468,166 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5647F611AE607C3FC8566DCEB201E5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC4D2D9451F9ABE691D3CE506133979 /* FaceCropImageView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FaceCropImageView/FaceCropImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FaceCropImageView/FaceCropImageView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FaceCropImageView/FaceCropImageView.modulemap";
+				PRODUCT_MODULE_NAME = FaceCropImageView;
+				PRODUCT_NAME = FaceCropImageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71648EEE3A8B62A8454E87696F11C479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E3ECA677E621842FCDEEA73306A663 /* Pods-FaceCropImageView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FaceCropImageView_Tests/Pods-FaceCropImageView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FaceCropImageView_Tests/Pods-FaceCropImageView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74D83A5670521F794A9808D84033A114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C129DD9216ED8867D7E7967D2ED19EC7 /* Pods-FaceCropImageView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FaceCropImageView_Example/Pods-FaceCropImageView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FaceCropImageView_Example/Pods-FaceCropImageView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -621,7 +647,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -634,40 +660,9 @@
 			};
 			name = Debug;
 		};
-		CDF50E899E3E3F2117C7185D6289C37B /* Debug */ = {
+		8F1A01C1FAF45DBE667A625CAC8DA2D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACBEB165D75468DA39B41D8C963713D6 /* FaceCropImageView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FaceCropImageView/FaceCropImageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FaceCropImageView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FaceCropImageView/FaceCropImageView.modulemap";
-				PRODUCT_MODULE_NAME = FaceCropImageView;
-				PRODUCT_NAME = FaceCropImageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E48DA1561C45F703A041FFAFA61F3881 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3F51FC9C6467DAFCC4F8EC63E30E0FB /* Pods-FaceCropImageView_Tests.release.xcconfig */;
+			baseConfigurationReference = 851E136012AE1C4117671D2AF84FE349 /* Pods-FaceCropImageView_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -679,9 +674,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FaceCropImageView_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FaceCropImageView_Tests/Pods-FaceCropImageView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FaceCropImageView_Tests/Pods-FaceCropImageView_Tests.modulemap";
@@ -693,17 +688,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		FE79BA247DE9C3B878A023A6D3E45CF2 /* Release */ = {
+		DB8D7D67B477AE20DD218A949F15198C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 483ADFD9E6D854081D5AFC184E27902A /* Pods-FaceCropImageView_Example.release.xcconfig */;
+			baseConfigurationReference = AEC4D2D9451F9ABE691D3CE506133979 /* FaceCropImageView.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -713,25 +706,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FaceCropImageView_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FaceCropImageView/FaceCropImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FaceCropImageView/FaceCropImageView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FaceCropImageView_Example/Pods-FaceCropImageView_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/FaceCropImageView/FaceCropImageView.modulemap";
+				PRODUCT_MODULE_NAME = FaceCropImageView;
+				PRODUCT_NAME = FaceCropImageView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -739,8 +730,8 @@
 		03F46C0E5AEB9638374CFF4C0F30EDA5 /* Build configuration list for PBXNativeTarget "FaceCropImageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDF50E899E3E3F2117C7185D6289C37B /* Debug */,
-				4E65B93999F995E24E22216BF0809CEF /* Release */,
+				DB8D7D67B477AE20DD218A949F15198C /* Debug */,
+				5647F611AE607C3FC8566DCEB201E5F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -748,8 +739,8 @@
 		14D17A54EFDD0CF0BFE4518920231643 /* Build configuration list for PBXNativeTarget "Pods-FaceCropImageView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				647EC06E790DC723F3A9718E922F1B05 /* Debug */,
-				E48DA1561C45F703A041FFAFA61F3881 /* Release */,
+				8F1A01C1FAF45DBE667A625CAC8DA2D8 /* Debug */,
+				71648EEE3A8B62A8454E87696F11C479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -757,8 +748,8 @@
 		25B7A03F2269216185C16C5A5B4A6FEB /* Build configuration list for PBXNativeTarget "Pods-FaceCropImageView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				952727DE30ADD15FC6F7C97FB9D30F85 /* Debug */,
-				FE79BA247DE9C3B878A023A6D3E45CF2 /* Release */,
+				085EA8F90FCDD2A220C8680839F9089B /* Debug */,
+				74D83A5670521F794A9808D84033A114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -766,8 +757,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6A7DE9C902EFE38BE4A346301EA1DB9 /* Debug */,
-				2A506743CF140B1834F797F766E2A82E /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

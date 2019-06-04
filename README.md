@@ -1,7 +1,6 @@
 # FaceCropImageView
 
-[![CI Status](https://img.shields.io/travis/hansjin/FaceCropImageView.svg?style=flat)](https://travis-ci.org/hansjin/FaceCropImageView)
-[![Version](https://img.shields.io/cocoapods/v/FaceCropImageView.svg?style=flat)](https://cocoapods.org/pods/FaceCropImageView)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/vsouza/awesome-ios)
 [![License](https://img.shields.io/cocoapods/l/FaceCropImageView.svg?style=flat)](https://cocoapods.org/pods/FaceCropImageView)
 [![Platform](https://img.shields.io/cocoapods/p/FaceCropImageView.svg?style=flat)](https://cocoapods.org/pods/FaceCropImageView)
 
