@@ -18,10 +18,10 @@ class ExampleViewController: UIViewController {
     
     // Variables
     let imageUrls: [String] = [
-        "https://cdn.pixabay.com/photo/2018/04/10/12/54/girl-3307264_1280.jpg",
-        "https://cdn.pixabay.com/photo/2017/09/16/14/33/electrician-2755684_1280.jpg",
-        "https://cdn.pixabay.com/photo/2019/05/30/20/48/couple-4240713_1280.jpg",
-        "https://cdn.pixabay.com/photo/2017/08/03/17/36/model-2577543_1280.jpg",
+        "https://github.com/HanSJin/FaceCropImageView/tree/master/Example/images/girl-3307264_1280.jpg",
+        "https://github.com/HanSJin/FaceCropImageView/tree/master/Example/images/electrician-2755684_1280.jpg",
+        "https://github.com/HanSJin/FaceCropImageView/tree/master/Example/images/couple-4240713_1280.jpg",
+        "https://github.com/HanSJin/FaceCropImageView/tree/master/Example/images/model-2577543_1280.jpg",
     ]
     
     override func viewDidLoad() {
