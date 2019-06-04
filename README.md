@@ -13,7 +13,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-FaceCropImageView is available through [CocoaPods](https://cocoapods.org). To install
+FaceCropImageView is available through [CocoaPods](https://cocoapods.org/pods/FaceCropImageView). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -22,7 +22,7 @@ pod 'FaceCropImageView'
 
 ## Author
 
-hansjin, sjin.han@navercorp.com
+HanSJin, kksd9900@naver.com
 
 ## License
 

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FaceCropImageView'
-  s.version          = '0.1.0'
-  s.summary          = 'This FaceCropImageView is the extension of UIImageView that helps to crop and show the proper location by face in the photo.'
+  s.version          = '1.0.0'
+  s.summary          = 'Crop and show the proper location of face in the photo.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'This FaceCropImageView is the extension of UIImageView that helps to crop and show the proper location by face in the photo.'
+  s.description      = 'This FaceCropImageView is the extension of UIImageView that helps to crop and show the proper location of face in the photo.'
   s.homepage         = 'https://github.com/hansjin/FaceCropImageView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

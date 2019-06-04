@@ -481,6 +481,7 @@
 			baseConfigurationReference = CB7457B0E3D6FFB5CF65E67D /* Pods-FaceCropImageView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaceCropImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -497,6 +498,7 @@
 			baseConfigurationReference = 5B2C52FA67642A496DC95D6E /* Pods-FaceCropImageView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaceCropImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AB0092F98A26411358CEE9D /* Pods-FaceCropImageView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -534,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11FB8872DF0A91D9099CC91D /* Pods-FaceCropImageView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
