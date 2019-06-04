@@ -7,7 +7,7 @@ This FaceCropImageView is the extension of UIImageView that helps to crop and sh
 
 Demo Screenshot is here!
 
-<img src="./Example/Images/demo-image.jpg" width="450">
+<img src="https://raw.githubusercontent.com/HanSJin/FaceCropImageView/master/Example/Images/demo-image.jpg" width="450">
 
 ## Installation
 
