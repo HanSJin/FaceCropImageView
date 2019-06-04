@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "FaceCropImageView/Classes/**/*"
+  "source_files": "FaceCropImageView/Classes/**/*",
+  "dependencies": {
+    "Kingfisher": [
+
+    ]
+  }
 }

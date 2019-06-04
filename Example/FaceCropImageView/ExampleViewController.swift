@@ -8,21 +8,33 @@
 
 import UIKit
 import FaceCropImageView
+import Kingfisher
 
 class ExampleViewController: UIViewController {
-
-    @IBOutlet weak var normalImageView: UIImageView!
-    @IBOutlet weak var faceCropImageView: UIImageView!
+    
+    // Outlets
+    @IBOutlet var normalImageViews: [UIImageView]!
+    @IBOutlet var faceCropImageViews: [UIImageView]!
+    
+    // Variables
+    let imageUrls: [String] = [
+        "https://cdn.pixabay.com/photo/2018/04/10/12/54/girl-3307264_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/09/16/14/33/electrician-2755684_1280.jpg",
+        "https://cdn.pixabay.com/photo/2019/05/30/20/48/couple-4240713_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/08/03/17/36/model-2577543_1280.jpg",
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        normalImageView.contentMode = .scaleAspectFill
-        normalImageView.image = UIImage(named: "jenny12")
-
-        faceCropImageView.contentMode = .scaleAspectFill
-        faceCropImageView.setFaceImage(UIImage(named: "jenny12"), fast: true) { result in
-            print(result)
+        for index in 0..<imageUrls.count {
+            let imageUrl = URL(string: imageUrls[index])
+                
+            // Set the normal image.
+            normalImageViews[index].kf.setImage(with: imageUrl)
+            
+            // Set the face crop image.
+            faceCropImageViews[index].setFaceImage(with: imageUrl)
         }
     }
 }

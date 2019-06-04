@@ -8,24 +8,17 @@
 
 import Foundation
 import UIKit
-
-public enum FaceDetectError: Error {
-    case notImage
-    case downloadFail(Error)
-    case detectorInitialFail
-    case noFace
-    
-    var localizedDescription: String {
-        switch self {
-        case .notImage: return "notImage"
-        case .downloadFail: return "downloadFail"
-        case .detectorInitialFail: return "detectorInitialFail"
-        case .noFace: return "noFace"
-        }
-    }
-}
+import Kingfisher
 
 // MARK: - Extension UIImageView for the FaceCrop
+
+public enum FaceDetectError: Error {
+    case wrongUrl
+    case imageNotFound
+    case detectorInitialFail
+    case noFace
+}
+
 public extension UIImageView {
     
     private var FaceCropLayerName: String {
@@ -56,9 +49,19 @@ public extension UIImageView {
         return layer
     }
     
+    func setFaceImage(with url: URL?, fast: Bool = true, completion: ((Result<[AnyObject], FaceDetectError>) -> Void)? = nil) {
+        guard let url = url else {
+            completion?(.failure(.wrongUrl))
+            return
+        }
+        KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { [weak self] image, error, _, _ in
+            self?.setFaceImage(image, fast: fast, completion: completion)
+        }
+    }
+    
     func setFaceImage(_ image: UIImage?, fast: Bool = true, completion: ((Result<[AnyObject], FaceDetectError>) -> Void)? = nil) {
         guard let image = image else {
-            completion?(.failure(.notImage))
+            completion?(.failure(.imageNotFound))
             return
         }
         let resourceImage: CIImage
@@ -67,7 +70,7 @@ public extension UIImageView {
         } else if let cgImage = image.cgImage {
             resourceImage = CIImage(cgImage: cgImage)
         } else {
-            completion?(.failure(.notImage))
+            completion?(.failure(.imageNotFound))
             return
         }
         guard let detector = makeDetector(fast: fast) else {
@@ -87,6 +90,7 @@ public extension UIImageView {
             } else {
                 DispatchQueue.main.async { [weak self] in
                     self?.imageLayer.removeFromSuperlayer()
+                    self?.image = image
                 }
                 completion?(.failure(.noFace))
             }

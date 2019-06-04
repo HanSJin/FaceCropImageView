@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'FaceCropImageView_Example' do
   pod 'FaceCropImageView', :path => '../'
+  pod 'Kingfisher'
 
   target 'FaceCropImageView_Tests' do
     inherit! :search_paths

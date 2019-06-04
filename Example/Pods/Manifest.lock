@@ -1,16 +1,24 @@
 PODS:
-  - FaceCropImageView (1.0.0)
+  - FaceCropImageView (1.0.0):
+    - Kingfisher
+  - Kingfisher (4.10.1)
 
 DEPENDENCIES:
   - FaceCropImageView (from `../`)
+  - Kingfisher
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
 
 EXTERNAL SOURCES:
   FaceCropImageView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FaceCropImageView: 95392f45a05060dcaeaba7162f17510e732012de
+  FaceCropImageView: fc419e3ddf8117c09f07c17c884e12d7847aebe0
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
 
-PODFILE CHECKSUM: 1f2acf766d9d7329d6a6d8866286d76c4821ff15
+PODFILE CHECKSUM: ff28453d915fc75a55270bb1f1d8c0f707229998
 
 COCOAPODS: 1.7.1
