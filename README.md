@@ -3,7 +3,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/FaceCropImageView.svg?style=flat)](https://cocoapods.org/pods/FaceCropImageView)
 
 ## Face Crop ImageView
-This FaceCropImageView is the extension of UIImageView that helps to crop and show the proper location of face in the photo. This library was strongly inspired by [UIImageView-BetterFace](https://github.com/croath/UIImageView-BetterFace).
+This FaceCropImageView is an extension of UIImageView, which helps to properly crop and show the position of the face in the picture. This library is strongly inspired by [UIImageView-BetterFace](https://github.com/croath/UIImageView-BetterFace).
 
 Demo screenshot and description are here!
 
