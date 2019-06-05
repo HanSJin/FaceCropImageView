@@ -28,7 +28,7 @@ let myImage = UIImage(named: "some-image")
 imageView.setFaceImage(imageUrl)
 ```
 
-You can also crop the image on the web using the URL. (In this case, the Kingfis her library is used)(https://github.com/onevcat/Kingfisher) library is used)
+You can also crop the image on the web using the URL. (In this case, the [Kingfisher](https://github.com/onevcat/Kingfisher) library is used)
 
 ```Swift
 let imageUrl = URL(string: "https://some-url/image.jpg")
